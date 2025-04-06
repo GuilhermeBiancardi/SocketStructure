@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/resources/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/resources/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/resources/app/css/style.css">
     <% if (customCSS) { %>
         <link rel="stylesheet" href="<%= customCSS %>">
     <% } %>
@@ -14,8 +16,9 @@
         <!-- Aqui será injetado o conteúdo específico de cada página -->
         <%- body %>
     </div>
+    <script src="/resources/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="/socket.io/socket.io.js"></script>
-    <script src="/resources/js/socket-client.js" type="module"></script>
+    <script src="/resources/app/js/socket-client.js" type="module"></script>
     <% if (customJS) { %>
         <script src="<%= customJS %>" type="module"></script>
     <% } %>

@@ -1,4 +1,4 @@
-import { connection, on, emit } from "../../../../resources/js/socket-client.js";
+import { connection, on, emit } from "../../../../resources/app/js/socket-client.js";
 
 const messages = document.getElementById("messages");
 const switchRoom = document.getElementById("switchRoom");
