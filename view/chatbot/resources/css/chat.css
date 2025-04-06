@@ -1,0 +1,29 @@
+#app {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+#messages {
+    border: 1px solid;
+    padding: 5px;
+    height: 500px;
+    width: 980px;
+    margin-bottom: 1em;
+    overflow-y: auto;
+}
+
+#inputAction {
+    gap: .5em;
+    display: flex;
+    justify-content: space-between;
+}
+
+#input_message {
+    width: 100%;
+}
+
+#input_message, #sendButton {
+    padding: .5em;
+    font-size: 1em;
+}

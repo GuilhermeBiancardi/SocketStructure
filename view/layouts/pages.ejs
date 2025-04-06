@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/resources/css/style.css">
+    <% if (customCSS) { %>
+        <link rel="stylesheet" href="<%= customCSS %>">
+    <% } %>
+    <title><%= title %></title>
+</head>
+<body>
+    <div id="app">
+        <!-- Aqui será injetado o conteúdo específico de cada página -->
+        <%- body %>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/resources/js/socket-client.js" type="module"></script>
+    <% if (customJS) { %>
+        <script src="<%= customJS %>" type="module"></script>
+    <% } %>
+</body>
+</html>

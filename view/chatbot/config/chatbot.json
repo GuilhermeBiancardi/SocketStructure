@@ -1,0 +1,6 @@
+{
+    "title": "Chat",
+    "url": "/chat",
+    "customCSS": "${url}/resources/css/chat.css",
+    "customJS": "${url}/resources/js/chat.js"
+}

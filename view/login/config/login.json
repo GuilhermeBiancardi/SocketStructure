@@ -1,0 +1,12 @@
+{
+    "title": "Página de Login",
+    "url": "/login",
+    "pages": {
+        "register": {
+            "title": "Registrar",
+            "url": "${url}/register"
+        }
+    },
+    "customCSS": null,
+    "customJS": null
+}
