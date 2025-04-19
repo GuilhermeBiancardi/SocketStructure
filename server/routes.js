@@ -49,12 +49,14 @@ const ignoredDirectories = ['layouts'];
 // Função para criar rotas automaticamente com base nos diretórios
 function createRoutesFromDirectories(basePath) {
     // Lê os diretórios dentro do caminho base (`view`)
-    // `withFileTypes: true` permite que o `fs` retorne objetos `Dirent`, que contêm informações sobre os arquivos e diretórios.
+    // `withFileTypes: true` permite que o `fs` retorne objetos `Dirent`, que contêm informações sobre 
+    // os arquivos e diretórios.
     const directories = fs.readdirSync(basePath, { withFileTypes: true });
     // Percorre os diretórios e verifica se são realmente diretórios e não estão na lista de ignorados
     directories.forEach((dir) => {
         // Verifica se o item é um diretório e não está na lista de ignorados
-        // `dir.isDirectory()` verifica se o item é um diretório, e `ignoredDirectories.includes(dir.name)` verifica se o nome do diretório está na lista de ignorados.
+        // `dir.isDirectory()` verifica se o item é um diretório, e `ignoredDirectories.includes(dir.name)` 
+        // verifica se o nome do diretório está na lista de ignorados.
         if (dir.isDirectory() && !ignoredDirectories.includes(dir.name)) {
             // Define o caminho para o arquivo de configuração JSON dentro do diretório
             // `path.join` é usado para construir o caminho de forma segura, independente do sistema operacional.

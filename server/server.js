@@ -33,4 +33,5 @@ const io = new Server(serverHttp);
 export default io;
 
 // Comentário indicando que o servidor pode ser iniciado com o comando `npm run dev`.
-// Este comando deve estar configurado no arquivo `package.json` para usar ferramentas como `nodemon` para reiniciar automaticamente o servidor durante o desenvolvimento.
+// Este comando deve estar configurado no arquivo `package.json` para usar ferramentas 
+// como `nodemon` para reiniciar automaticamente o servidor durante o desenvolvimento.
